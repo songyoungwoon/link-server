@@ -1,0 +1,27 @@
+on onStart(ctx) {
+  store angle = 0;
+  store clicks = 0;
+  ctx.find(ctx.config.visual);
+  ctx.setState({selected: false, clicks: 0, angle: 0});
+  ctx.log("LINK LAN: remote Script loaded");
+}
+on onUpdate(ctx, deltaSeconds) {
+  angle = (angle + ctx.config.speed * deltaSeconds) % 360;
+  ctx.setState({angle: angle});
+  ctx.setTransform({rotation: [0,angle,0]});
+}
+on onInteract(ctx, event) {
+  let selected = !ctx.getState().selected;
+  clicks = clicks + 1;
+  ctx.setState({selected: selected, clicks: clicks});
+  let visual = ctx.find(ctx.config.visual);
+  if (selected) {
+    ctx.setStyle(visual, {color: ctx.config.activeColor});
+  } else {
+    ctx.clearStyle(visual);
+  }
+  ctx.log(event);
+}
+on onDestroy(ctx) {
+  ctx.log("LINK LAN: remote world released");
+}

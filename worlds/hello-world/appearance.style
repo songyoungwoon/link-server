@@ -1,0 +1,10 @@
+defaults {
+  color: "#ECF6F3";
+  roughness: .75;
+  metalness: 0;
+  opacity: 1;
+  wireframe: false;
+}
+material floor_material { color: "#23434A"; roughness: .95; }
+material cube_material { color: "#55D8C4"; roughness: .4; metalness: .15; }
+material portal_material { color: "#F0B977"; roughness: .45; }

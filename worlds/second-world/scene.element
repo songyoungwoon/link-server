@@ -1,0 +1,41 @@
+scene {
+  object second_remote_room {
+    component room {
+      element floor {
+        geometry: {type: "box", size: [12,.16,16]};
+        position: [0,-.08,0];
+        style: "floor_material";
+      }
+      element title {
+        geometry: {type: "plane", size: [8,.8]};
+        text: "SECOND WORLD / SAME REMOTE SERVER";
+        position: [0,4,-4.5];
+      }
+      element explanation {
+        geometry: {type: "plane", size: [7,.5]};
+        text: "The relative portal kept the server IP and port.";
+        position: [0,3.3,-4.5];
+      }
+      element return_frame {
+        geometry: {type: "frame", size: [2.3,3.3], border: .1, depth: .16};
+        position: [0,1.65,-4];
+        style: "portal_material";
+      }
+      element return_caption {
+        geometry: {type: "plane", size: [4,.45]};
+        text: "WALK THROUGH TO RETURN: /hello-world";
+        position: [0,.35,-3.8];
+      }
+      element marker_left {
+        geometry: {type: "cylinder", radius: .45, radiusTop: .45, height: 2};
+        position: [-3,1,-1];
+        style: "portal_material";
+      }
+      element marker_right {
+        geometry: {type: "cylinder", radius: .45, radiusTop: .45, height: 2};
+        position: [3,1,-1];
+        style: "portal_material";
+      }
+    }
+  }
+}

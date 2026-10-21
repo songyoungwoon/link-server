@@ -1,0 +1,12 @@
+world {
+  version: "0.1";
+  id: "hello-world";
+  name: "LINK LAN - Remote Hello World";
+  elements: "scene.element";
+  style: "appearance.style";
+  scripts: ["scripts/remote.script"];
+  entry: {position: [0,1.65,6], target: [0,1.65,0]};
+  environment: {background: "#102831", grid: false};
+  walk: {min: [-7,0,-7], max: [7,4,7], eyeHeight: 1.65, speed: 3.4};
+  portals: [{id: "to_second_world", address: "/second-world", position: [4,1.65,-4], size: [2.2,3.2,1]}];
+}

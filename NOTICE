@@ -1,0 +1,9 @@
+LINK LAN Server
+Copyright 2026 Song Youngwoon
+
+This standalone LINK server implements the experimental LINK LAN HTTP transport
+and serves LINK World Standards v0.1 documents for LINK Browser.
+
+Source code, documentation, example world documents and the generated PNG test
+asset are licensed under the Apache License, Version 2.0. See LICENSE.
+The server includes no personal photographs or other private photo assets.

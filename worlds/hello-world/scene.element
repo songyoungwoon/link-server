@@ -1,0 +1,53 @@
+scene {
+  object remote_hello {
+    name: "Documents loaded from the LINK LAN server";
+    component room {
+      element floor {
+        geometry: {type: "box", size: [16,.16,16]};
+        position: [0,-.08,0];
+        style: "floor_material";
+      }
+      element remote_title {
+        geometry: {type: "plane", size: [8,.8]};
+        text: "LINK LAN SERVER / REMOTE WORLD";
+        position: [0,4.3,-4.5];
+      }
+      element remote_help {
+        geometry: {type: "plane", size: [7,.5]};
+        text: "This cube rotates. Click it to change its color.";
+        position: [0,3.5,-4.5];
+      }
+      element image_transfer {
+        geometry: {type: "plane", size: [2.2,2.2]};
+        image: "assets/연결.png";
+        position: [-3.8,1.9,-2.5];
+      }
+      element image_caption {
+        geometry: {type: "plane", size: [3,.4]};
+        text: "PNG + UTF-8 path via HTTP";
+        position: [-3.8,.55,-2.4];
+      }
+      element portal_frame {
+        geometry: {type: "frame", size: [2.3,3.3], border: .1, depth: .16};
+        position: [4,1.65,-4];
+        style: "portal_material";
+      }
+      element portal_caption {
+        geometry: {type: "plane", size: [3.2,.5]};
+        text: "WALK THROUGH: /second-world";
+        position: [4,3.6,-4];
+      }
+    }
+    component remote_spinner {
+      name: "Click the remotely loaded cube";
+      position: [0,1.5,0];
+      script: "scripts/remote.script";
+      config: {speed: 45, visual: "remote_cube", activeColor: "#FFA75F"};
+      state: {selected: false, clicks: 0, angle: 0};
+      element remote_cube {
+        geometry: {type: "box", size: [1.7,1.7,1.7]};
+        style: "cube_material";
+      }
+    }
+  }
+}
