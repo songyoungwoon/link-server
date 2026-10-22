@@ -36,7 +36,7 @@ class NetworkTests(unittest.TestCase):
         (self.world / "appearance.style").write_bytes(b"defaults {}\n")
         (self.world / "scripts").mkdir()
         (self.world / "scripts" / "remote.script").write_bytes(b"on onStart(ctx) {}\n")
-        self.server = link_server.create_server("127.0.0.1", 0, self.root)
+        self.server = link_server.create_server("127.0.0.1", 0, self.root, transport="http")
         self.thread = threading.Thread(target=self.server.serve_forever, kwargs={"poll_interval": .01}, daemon=True)
         self.thread.start()
         self.port = self.server.server_address[1]
@@ -223,7 +223,7 @@ class NetworkTests(unittest.TestCase):
         try:
             os.chdir(self.base)
             self.assert_response("/hello-world/world.link", 200)
-            default_server = link_server.create_server("127.0.0.1", 0)
+            default_server = link_server.create_server("127.0.0.1", 0, transport="http")
             try:
                 self.assertEqual(default_server.worlds_root, Path(link_server.__file__).resolve().parent / "worlds")
                 resolved, world, limit, _ = link_server.resolve_resource(default_server.worlds_root, "/hello-world/world.link")
@@ -234,7 +234,7 @@ class NetworkTests(unittest.TestCase):
             os.chdir(previous)
 
     def test_startup_advertises_every_host_ipv4_and_actual_port(self):
-        server = link_server.create_server("0.0.0.0", 0, self.root)
+        server = link_server.create_server("0.0.0.0", 0, self.root, transport="http")
         try:
             output = io.StringIO()
             with mock.patch.object(link_server, "lan_ipv4_addresses", return_value=["198.51.100.42", "192.168.128.1"]):

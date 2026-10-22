@@ -24,7 +24,7 @@ scene {
       }
       element image_caption {
         geometry: {type: "plane", size: [3,.4]};
-        text: "PNG + UTF-8 path via HTTP";
+        text: "PNG + UTF-8 path via LINK";
         position: [-3.8,.55,-2.4];
       }
       element portal_frame {

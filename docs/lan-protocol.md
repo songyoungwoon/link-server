@@ -1,17 +1,19 @@
-# LINK Protocol — LAN HTTP v0.1
+# Legacy LINK LAN HTTP v0.1
 
-The canonical address, resource, portal, loading, timeout and compatibility contract is maintained with LINK Browser:
+The default server now uses [LINK Protocol 0.1 over TCP](link-protocol-v0.1.md). This document describes only the explicit `--transport http` compatibility mode for older LINK Browser builds.
 
-[LINK Protocol — LAN HTTP v0.1](https://github.com/songyoungwoon/link/blob/main/docs/link-lan-v0.1.md)
+The legacy address, resource, portal and loading contract remains documented in the browser repository:
 
-When working in sibling checkouts, the same source document is `../link/docs/link-lan-v0.1.md` from the server repository root. Keep browser and server updates together when changing this contract; the document above becomes available on GitHub when the matching browser changes are pushed.
+[Legacy LINK LAN HTTP v0.1](https://github.com/songyoungwoon/link/blob/4321e98/docs/link-lan-v0.1.md)
 
-This server is a reference file provider for that contract:
+- `link://<IPv4>[:port]/<world>` maps to HTTP `/<world>/world.link` in that older browser. Default port: 8000.
+- The server supports read-only GET/HEAD, an index page and optional `/.well-known/link` metadata.
+- Resource path confinement and per-file size limits still apply. HTTP requests are independent; the server does not track a navigation's total byte count in this mode.
+- The transport is plain HTTP without TLS, authentication or shared multiplayer state.
+- A native LINK/TCP browser cannot connect to this mode. There is no automatic transport fallback.
 
-- `link://<IPv4>[:port]/<world>` maps to HTTP `/<world>/world.link`; the default port is 8000.
-- Manifest documents, Element, Script, Style and images remain relative to their world directory.
-- `/second-world` portals retain the server IP and port; explicit `link://local/...` means the visiting browser's local worlds.
-- The server supports GET/HEAD and optional `/.well-known/link` metadata. Scripts execute in the browser. Shared multiplayer state is not implemented.
-- The initial transport uses plain HTTP on a trusted LAN. Domain names, HTTPS and authentication remain future work.
+Run legacy HTTP on a separate port when comparing old and new browsers:
 
-See the [server README](../README.md) for Windows startup, IP selection, root configuration, tests and a manual LAN-only firewall rule.
+~~~powershell
+python .\link_server.py --transport http --port 8001
+~~~

@@ -16,7 +16,7 @@ python "%~dp0link_server.py" %*
 set "LINK_SERVER_EXIT=%errorlevel%"
 goto finished
 :missing_python
-echo LINK LAN Server requires Python 3.10 or newer.
+echo LINK Server requires Python 3.10 or newer.
 echo Install Python from https://www.python.org/downloads/windows/ and try again.
 set "LINK_SERVER_EXIT=1"
 :finished
