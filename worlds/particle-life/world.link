@@ -1,0 +1,15 @@
+world {
+  version: "0.1";
+  extensions: ["particles-v1"];
+  id: "particle-life";
+  name: "PARTICLE LIFE / A field of possibilities";
+  elements: "scene.element";
+  style: "appearance.style";
+  scripts: ["scripts/culture.script"];
+  entry: {position: [6.9,7.4,9.4], target: [0,1.05,0]};
+  environment: {background: "#060D15", grid: false};
+  views: [
+    {name: "Observation", position: [6.9,7.4,9.4], target: [0,1.05,0]},
+    {name: "Inside the field", position: [2.1,2.7,3.6], target: [0,1.05,0]}
+  ];
+}

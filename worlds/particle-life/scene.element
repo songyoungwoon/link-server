@@ -1,0 +1,511 @@
+// Original image-free particle field. Every moving point is runtime state.
+scene {
+  object laboratory {
+    component architecture {
+      element ground {
+        geometry: {"type":"plane","size":[80,80]};
+        position: [0,-0.58,0];
+        style: "floor";
+        rotation: [-90,0,0];
+      }
+      element pedestal {
+        geometry: {"type":"cylinder","radius":1.82,"radiusTop":1.82,"height":0.75};
+        position: [0,-0.18,0];
+        style: "body";
+      }
+      element pedestal_seam {
+        geometry: {"type":"cylinder","radius":1.84,"radiusTop":1.84,"height":0.025};
+        position: [0,-0.42,0];
+        style: "cyan";
+      }
+      element floating_underside {
+        geometry: {"type":"cylinder","radius":3.44,"radiusTop":3.44,"height":0.13};
+        position: [0,0.205,0];
+        style: "body";
+      }
+      element perimeter_light {
+        geometry: {"type":"cylinder","radius":3.46,"radiusTop":3.46,"height":0.028};
+        position: [0,0.285,0];
+        style: "cyan";
+      }
+      element observation_dish {
+        geometry: {"type":"cylinder","radius":3.43,"radiusTop":3.43,"height":0.12};
+        position: [0,0.36,0];
+        style: "body";
+      }
+      element culture_floor {
+        geometry: {"type":"cylinder","radius":3.18,"radiusTop":3.18,"height":0.016};
+        position: [0,0.428,0];
+        style: "dish";
+      }
+      element rim_tick_0 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [0.0,0.438,3.29];
+        style: "cyan";
+        rotation: [0,0.0,0];
+      }
+      element rim_tick_1 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [0.322476,0.438,3.274158];
+        style: "rim";
+        rotation: [0,5.625,0];
+      }
+      element rim_tick_2 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [0.641847,0.438,3.226784];
+        style: "rim";
+        rotation: [0,11.25,0];
+      }
+      element rim_tick_3 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [0.955037,0.438,3.148334];
+        style: "rim";
+        rotation: [0,16.875,0];
+      }
+      element rim_tick_4 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [1.259028,0.438,3.039564];
+        style: "rim";
+        rotation: [0,22.5,0];
+      }
+      element rim_tick_5 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [1.550895,0.438,2.901521];
+        style: "rim";
+        rotation: [0,28.125,0];
+      }
+      element rim_tick_6 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [1.827826,0.438,2.735535];
+        style: "rim";
+        rotation: [0,33.75,0];
+      }
+      element rim_tick_7 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [2.087154,0.438,2.543204];
+        style: "rim";
+        rotation: [0,39.375,0];
+      }
+      element rim_tick_8 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [2.326381,0.438,2.326381];
+        style: "cyan";
+        rotation: [0,45.0,0];
+      }
+      element rim_tick_9 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [2.543204,0.438,2.087154];
+        style: "rim";
+        rotation: [0,50.625,0];
+      }
+      element rim_tick_10 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [2.735535,0.438,1.827826];
+        style: "rim";
+        rotation: [0,56.25,0];
+      }
+      element rim_tick_11 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [2.901521,0.438,1.550895];
+        style: "rim";
+        rotation: [0,61.875,0];
+      }
+      element rim_tick_12 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [3.039564,0.438,1.259028];
+        style: "rim";
+        rotation: [0,67.5,0];
+      }
+      element rim_tick_13 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [3.148334,0.438,0.955037];
+        style: "rim";
+        rotation: [0,73.125,0];
+      }
+      element rim_tick_14 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [3.226784,0.438,0.641847];
+        style: "rim";
+        rotation: [0,78.75,0];
+      }
+      element rim_tick_15 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [3.274158,0.438,0.322476];
+        style: "rim";
+        rotation: [0,84.375,0];
+      }
+      element rim_tick_16 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [3.29,0.438,0.0];
+        style: "cyan";
+        rotation: [0,90.0,0];
+      }
+      element rim_tick_17 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [3.274158,0.438,-0.322476];
+        style: "rim";
+        rotation: [0,95.625,0];
+      }
+      element rim_tick_18 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [3.226784,0.438,-0.641847];
+        style: "rim";
+        rotation: [0,101.25,0];
+      }
+      element rim_tick_19 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [3.148334,0.438,-0.955037];
+        style: "rim";
+        rotation: [0,106.875,0];
+      }
+      element rim_tick_20 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [3.039564,0.438,-1.259028];
+        style: "rim";
+        rotation: [0,112.5,0];
+      }
+      element rim_tick_21 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [2.901521,0.438,-1.550895];
+        style: "rim";
+        rotation: [0,118.125,0];
+      }
+      element rim_tick_22 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [2.735535,0.438,-1.827826];
+        style: "rim";
+        rotation: [0,123.75,0];
+      }
+      element rim_tick_23 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [2.543204,0.438,-2.087154];
+        style: "rim";
+        rotation: [0,129.375,0];
+      }
+      element rim_tick_24 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [2.326381,0.438,-2.326381];
+        style: "cyan";
+        rotation: [0,135.0,0];
+      }
+      element rim_tick_25 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [2.087154,0.438,-2.543204];
+        style: "rim";
+        rotation: [0,140.625,0];
+      }
+      element rim_tick_26 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [1.827826,0.438,-2.735535];
+        style: "rim";
+        rotation: [0,146.25,0];
+      }
+      element rim_tick_27 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [1.550895,0.438,-2.901521];
+        style: "rim";
+        rotation: [0,151.875,0];
+      }
+      element rim_tick_28 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [1.259028,0.438,-3.039564];
+        style: "rim";
+        rotation: [0,157.5,0];
+      }
+      element rim_tick_29 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [0.955037,0.438,-3.148334];
+        style: "rim";
+        rotation: [0,163.125,0];
+      }
+      element rim_tick_30 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [0.641847,0.438,-3.226784];
+        style: "rim";
+        rotation: [0,168.75,0];
+      }
+      element rim_tick_31 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [0.322476,0.438,-3.274158];
+        style: "rim";
+        rotation: [0,174.375,0];
+      }
+      element rim_tick_32 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [0.0,0.438,-3.29];
+        style: "cyan";
+        rotation: [0,180.0,0];
+      }
+      element rim_tick_33 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-0.322476,0.438,-3.274158];
+        style: "rim";
+        rotation: [0,185.625,0];
+      }
+      element rim_tick_34 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-0.641847,0.438,-3.226784];
+        style: "rim";
+        rotation: [0,191.25,0];
+      }
+      element rim_tick_35 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-0.955037,0.438,-3.148334];
+        style: "rim";
+        rotation: [0,196.875,0];
+      }
+      element rim_tick_36 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-1.259028,0.438,-3.039564];
+        style: "rim";
+        rotation: [0,202.5,0];
+      }
+      element rim_tick_37 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-1.550895,0.438,-2.901521];
+        style: "rim";
+        rotation: [0,208.125,0];
+      }
+      element rim_tick_38 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-1.827826,0.438,-2.735535];
+        style: "rim";
+        rotation: [0,213.75,0];
+      }
+      element rim_tick_39 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-2.087154,0.438,-2.543204];
+        style: "rim";
+        rotation: [0,219.375,0];
+      }
+      element rim_tick_40 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-2.326381,0.438,-2.326381];
+        style: "cyan";
+        rotation: [0,225.0,0];
+      }
+      element rim_tick_41 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-2.543204,0.438,-2.087154];
+        style: "rim";
+        rotation: [0,230.625,0];
+      }
+      element rim_tick_42 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-2.735535,0.438,-1.827826];
+        style: "rim";
+        rotation: [0,236.25,0];
+      }
+      element rim_tick_43 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-2.901521,0.438,-1.550895];
+        style: "rim";
+        rotation: [0,241.875,0];
+      }
+      element rim_tick_44 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-3.039564,0.438,-1.259028];
+        style: "rim";
+        rotation: [0,247.5,0];
+      }
+      element rim_tick_45 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-3.148334,0.438,-0.955037];
+        style: "rim";
+        rotation: [0,253.125,0];
+      }
+      element rim_tick_46 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-3.226784,0.438,-0.641847];
+        style: "rim";
+        rotation: [0,258.75,0];
+      }
+      element rim_tick_47 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-3.274158,0.438,-0.322476];
+        style: "rim";
+        rotation: [0,264.375,0];
+      }
+      element rim_tick_48 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-3.29,0.438,-0.0];
+        style: "cyan";
+        rotation: [0,270.0,0];
+      }
+      element rim_tick_49 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-3.274158,0.438,0.322476];
+        style: "rim";
+        rotation: [0,275.625,0];
+      }
+      element rim_tick_50 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-3.226784,0.438,0.641847];
+        style: "rim";
+        rotation: [0,281.25,0];
+      }
+      element rim_tick_51 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-3.148334,0.438,0.955037];
+        style: "rim";
+        rotation: [0,286.875,0];
+      }
+      element rim_tick_52 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-3.039564,0.438,1.259028];
+        style: "rim";
+        rotation: [0,292.5,0];
+      }
+      element rim_tick_53 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-2.901521,0.438,1.550895];
+        style: "rim";
+        rotation: [0,298.125,0];
+      }
+      element rim_tick_54 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-2.735535,0.438,1.827826];
+        style: "rim";
+        rotation: [0,303.75,0];
+      }
+      element rim_tick_55 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-2.543204,0.438,2.087154];
+        style: "rim";
+        rotation: [0,309.375,0];
+      }
+      element rim_tick_56 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-2.326381,0.438,2.326381];
+        style: "cyan";
+        rotation: [0,315.0,0];
+      }
+      element rim_tick_57 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-2.087154,0.438,2.543204];
+        style: "rim";
+        rotation: [0,320.625,0];
+      }
+      element rim_tick_58 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-1.827826,0.438,2.735535];
+        style: "rim";
+        rotation: [0,326.25,0];
+      }
+      element rim_tick_59 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-1.550895,0.438,2.901521];
+        style: "rim";
+        rotation: [0,331.875,0];
+      }
+      element rim_tick_60 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-1.259028,0.438,3.039564];
+        style: "rim";
+        rotation: [0,337.5,0];
+      }
+      element rim_tick_61 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-0.955037,0.438,3.148334];
+        style: "rim";
+        rotation: [0,343.125,0];
+      }
+      element rim_tick_62 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-0.641847,0.438,3.226784];
+        style: "rim";
+        rotation: [0,348.75,0];
+      }
+      element rim_tick_63 {
+        geometry: {"type":"box","size":[0.023,0.025,0.13]};
+        position: [-0.322476,0.438,3.274158];
+        style: "rim";
+        rotation: [0,354.375,0];
+      }
+      element source_marker_0 {
+        geometry: {"type":"cylinder","radius":0.13,"radiusTop":0.13,"height":0.012};
+        position: [0.0,0.445,1.5];
+        style: "gold";
+      }
+      element source_marker_1 {
+        geometry: {"type":"cylinder","radius":0.13,"radiusTop":0.13,"height":0.012};
+        position: [1.299038,0.445,-0.75];
+        style: "gold";
+      }
+      element source_marker_2 {
+        geometry: {"type":"cylinder","radius":0.13,"radiusTop":0.13,"height":0.012};
+        position: [-1.299038,0.445,-0.75];
+        style: "gold";
+      }
+      element mast_left {
+        geometry: {"type":"box","size":[0.035,2.8,0.035]};
+        position: [-3.05,1.8,-3.3];
+        style: "rim";
+      }
+      element mast_right {
+        geometry: {"type":"box","size":[0.035,2.8,0.035]};
+        position: [3.05,1.8,-3.3];
+        style: "rim";
+      }
+      element header_line {
+        geometry: {"type":"box","size":[6.1,0.012,0.015]};
+        position: [0,3.18,-3.3];
+        style: "cyan";
+      }
+      element title {
+        geometry: {"type":"plane","size":[5.6,0.48]};
+        position: [0,2.83,-3.27];
+        style: "title";
+        text: "PARTICLE LIFE";
+      }
+      element subtitle {
+        geometry: {"type":"plane","size":[5.6,0.25]};
+        position: [0,2.38,-3.27];
+        style: "caption";
+        text: "SMALL RULES. UNEXPECTED WORLDS.";
+      }
+      element experiment_caption {
+        geometry: {"type":"plane","size":[5.6,0.25]};
+        position: [0,1.99,-3.27];
+        style: "caption";
+        text: "LOCAL INTERACTIONS / ENERGY / ADAPTATION";
+      }
+    }
+    component culture {
+      script: "scripts/culture.script";
+      state: {focus: 0};
+      element organisms {
+        geometry: {"type":"particles","capacity":160,"radius":0.075,"cellSize":0.8};
+        position: [0,0,0];
+        style: "organism";
+      }
+      element nutrients {
+        geometry: {"type":"particles","capacity":16,"radius":0.055,"cellSize":0.8};
+        position: [0,0,0];
+        style: "nutrient";
+      }
+      element source_control {
+        geometry: {"type":"box","size":[4.6,0.45,0.18]};
+        position: [0,0.61,3.53];
+        style: "body";
+      }
+      element source_control_line {
+        geometry: {"type":"box","size":[4.3,0.012,0.025]};
+        position: [0,0.86,3.58];
+        style: "cyan";
+      }
+      element source_control_label {
+        geometry: {"type":"plane","size":[4.1,0.22]};
+        position: [0,0.66,3.635];
+        style: "control_label";
+        text: "CLICK TO MOVE THE ENERGY SOURCE";
+      }
+      element source_control_hint {
+        geometry: {"type":"plane","size":[4.1,0.17]};
+        position: [0,0.42,3.635];
+        style: "caption";
+        text: "DRAG TO ORBIT / SCROLL TO EXPLORE";
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+defaults { color: "#14242C"; roughness: .76; }
+material floor { color: "#080F18"; roughness: .86; }
+material body { color: "#16242E"; roughness: .4; metalness: .6; }
+material dish { color: "#0C1B25"; roughness: .3; metalness: .25; }
+material rim { color: "#253D49"; roughness: .34; metalness: .7; }
+material cyan { color: "#53D7D5"; emission: 1.1; }
+material gold { color: "#E9BD70"; emission: .7; }
+material organism { color: "#E8D48C"; emission: 1.2; }
+material nutrient { color: "#64F3DE"; emission: 1.6; }
+material title { color: "#E9EFED"; textBackground: false; }
+material caption { color: "#809BAA"; textBackground: false; }
+material control_label { color: "#7FE8DE"; textBackground: false; }

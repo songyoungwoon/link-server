@@ -1,0 +1,66 @@
+// A bounded artificial-life experiment, not a biological model.
+// Particles read one frozen phase snapshot. Changes commit after callbacks.
+on onStart(ctx) {
+  store elapsed = 0;
+  ctx.setState({focus: 0});
+  for (let index of range(48)) {
+    let angle = ctx.random() * 6.283185307;
+    let distance = sqrt(ctx.random()) * 2.65;
+    let heading = ctx.random() * 6.283185307;
+    ctx.spawnParticle("organisms", {
+      position: [sin(angle) * distance, .94 + ctx.random() * .2, cos(angle) * distance],
+      velocity: [sin(heading) * .25, 0, cos(heading) * .25],
+      state: {energy: .45 + ctx.random() * .35}
+    });
+  }
+  for (let index of range(8)) {
+    let angle = index * .785398163;
+    ctx.spawnParticle("nutrients", {
+      position: [sin(angle) * .28, 1.04, 1.5 + cos(angle) * .28],
+      color: "#64F3DE"
+    });
+  }
+}
+on onUpdate(ctx, deltaSeconds) {
+  elapsed = elapsed + deltaSeconds;
+  let angle = ctx.getState().focus * 2.094395102;
+  let source = [sin(angle) * 1.5, 1.04, cos(angle) * 1.5];
+  for (let id of ctx.particleIds("nutrients")) {
+    let phase = id * .785398163 + elapsed * .35;
+    ctx.setParticle("nutrients", id, {
+      position: vadd(source, [sin(phase) * .28, sin(phase * 2) * .045, cos(phase) * .28])
+    });
+  }
+  for (let id of ctx.particleIds("organisms")) {
+    let particle = ctx.getParticle("organisms", id);
+    let offset = vsub(source, particle.position);
+    let force = vmul(offset, .28);
+    for (let neighborId of ctx.neighbors("organisms", id, .8, 4)) {
+      let neighbor = ctx.getParticle("organisms", neighborId);
+      let separation = vsub(particle.position, neighbor.position);
+      let distanceSquared = max(dot(separation, separation), .008);
+      force = vadd(force, vmul(separation, .026 / distanceSquared - .05));
+      force = vadd(force, vmul(vsub(neighbor.velocity, particle.velocity), .12));
+    }
+    force = vadd(force, [sin(elapsed * .8 + id) * .07, (1.04 - particle.position[1]) * 1.2, cos(elapsed * .7 + id) * .07]);
+    let energy = clamp(particle.state.energy + deltaSeconds * (.045 - length(offset) * .025), 0, 1.4);
+    let velocity = vmul(normalize(vadd(vmul(particle.velocity, .98), vmul(force, deltaSeconds))), .18 + energy * .22);
+    let color = "#E5C986";
+    if (energy > .8) { color = "#C9EAA1"; }
+    if (energy < .25) { color = "#B77B65"; }
+    if (energy > 1.1 && ctx.particleCount("organisms") < 96 && ctx.random() < deltaSeconds * .16) {
+      ctx.spawnParticle("organisms", {
+        position: vadd(particle.position, [.09, .025, -.09]),
+        velocity: vmul(velocity, -1),
+        state: {energy: .5}
+      });
+      energy = energy - .45;
+    }
+    ctx.setParticle("organisms", id, {velocity: velocity, color: color, state: {energy: energy}});
+    if (particle.age > 90 && energy < .015) { ctx.removeParticle("organisms", id); }
+  }
+}
+on onInteract(ctx, event) {
+  ctx.setState({focus: (ctx.getState().focus + 1) % 3});
+}
+on onDestroy(ctx) { ctx.log("Particle field released"); }

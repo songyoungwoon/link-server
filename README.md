@@ -47,10 +47,13 @@ Test-NetConnection 서버IPv4 -Port 8000
 | `/hello-world` | 회전하고 클릭하면 색이 바뀌는 큐브, UTF-8 경로 이미지, 두 번째 월드로 가는 포탈 |
 | `/second-world` | 같은 서버의 두 번째 공간과 돌아오는 포탈 |
 | `/afterlight` | 원목 가구, 오후빛, 책과 스탠드가 있는 작은 3D 방 |
+| `/particle-life` | 이웃 반응·에너지·제한된 증식을 관찰하는 이미지 없는 입자 실험실 |
 
 `/second-world` 같은 상대 포탈 주소는 접속한 서버의 IP와 포트를 유지합니다. `link://local/...`은 방문 중인 브라우저 PC의 로컬 월드를 뜻합니다. 포탈 이동과 새로고침은 새로운 연결에서 월드를 다시 가져옵니다.
 
 AFTERLIGHT에서는 WASD와 마우스 드래그로 이동하고, 탁자의 책 표지를 클릭해 펼치거나 스탠드 받침을 클릭해 작은 빛무리를 켤 수 있습니다. [제작 방식과 조작 안내](https://github.com/songyoungwoon/link/blob/main/docs/afterlight.md)는 LINK Browser 저장소에 있습니다. 빛과 그림자는 정적 베이크입니다.
+
+PARTICLE LIFE는 `particles-v1` 확장을 지원하는 최신 브라우저가 필요합니다. 앞쪽 패널을 클릭해 원천 위치를 바꾸고 군집 반응을 살펴볼 수 있습니다. [제작과 조작 안내](https://github.com/songyoungwoon/link/blob/main/docs/particle-life.md)를 참고하세요. 서버는 입자를 계산하지 않고 Element·Script·Style 문서를 그대로 제공합니다.
 
 Script는 각 브라우저에서 실행됩니다. 다른 사용자의 클릭이나 플레이어 위치를 공유하는 멀티플레이어 동기화는 아직 제공하지 않습니다.
 
