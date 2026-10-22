@@ -1,0 +1,10 @@
+on onStart(ctx) { ctx.setState({isOn: false}); }
+on onUpdate(ctx, deltaSeconds) { }
+on onInteract(ctx, event) {
+  let enabled = !ctx.getState().isOn;
+  ctx.setState({isOn: enabled});
+  ctx.setTransform("lamp_pool", {visible: enabled});
+  if (enabled) { ctx.setStyle("lamp_bulb", {emission: 1.6}); }
+  else { ctx.clearStyle("lamp_bulb"); }
+}
+on onDestroy(ctx) { ctx.log("AFTERLIGHT lamp released"); }

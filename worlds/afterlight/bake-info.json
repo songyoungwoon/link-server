@@ -1,0 +1,305 @@
+{
+  "world": "afterlight",
+  "nodes": 235,
+  "images": 74,
+  "assets": {
+    "assets/oak_floor.png": {
+      "width": 2048,
+      "height": 1744
+    },
+    "assets/back_plaster.png": {
+      "width": 1782,
+      "height": 973
+    },
+    "assets/right_plaster.png": {
+      "width": 1517,
+      "height": 973
+    },
+    "assets/front_plaster.png": {
+      "width": 1296,
+      "height": 708
+    },
+    "assets/ceiling.png": {
+      "width": 1188,
+      "height": 1011
+    },
+    "assets/window_apron.png": {
+      "width": 915,
+      "height": 270
+    },
+    "assets/window_header.png": {
+      "width": 915,
+      "height": 90
+    },
+    "assets/window_left_pier.png": {
+      "width": 135,
+      "height": 885
+    },
+    "assets/window_right_pier.png": {
+      "width": 330,
+      "height": 885
+    },
+    "assets/bench_front.png": {
+      "width": 195,
+      "height": 150
+    },
+    "assets/bench_back.png": {
+      "width": 195,
+      "height": 150
+    },
+    "assets/bench_right.png": {
+      "width": 840,
+      "height": 150
+    },
+    "assets/bench_left.png": {
+      "width": 840,
+      "height": 150
+    },
+    "assets/bench_top.png": {
+      "width": 195,
+      "height": 840
+    },
+    "assets/cushion_front.png": {
+      "width": 229,
+      "height": 33
+    },
+    "assets/cushion_back.png": {
+      "width": 229,
+      "height": 33
+    },
+    "assets/cushion_right.png": {
+      "width": 973,
+      "height": 33
+    },
+    "assets/cushion_left.png": {
+      "width": 973,
+      "height": 33
+    },
+    "assets/cushion_top.png": {
+      "width": 229,
+      "height": 973
+    },
+    "assets/table_front.png": {
+      "width": 552,
+      "height": 32
+    },
+    "assets/table_back.png": {
+      "width": 552,
+      "height": 32
+    },
+    "assets/table_right.png": {
+      "width": 612,
+      "height": 32
+    },
+    "assets/table_left.png": {
+      "width": 612,
+      "height": 32
+    },
+    "assets/table_top.png": {
+      "width": 552,
+      "height": 612
+    },
+    "assets/cabinet_front.png": {
+      "width": 1092,
+      "height": 304
+    },
+    "assets/cabinet_back.png": {
+      "width": 1092,
+      "height": 304
+    },
+    "assets/cabinet_right.png": {
+      "width": 163,
+      "height": 304
+    },
+    "assets/cabinet_left.png": {
+      "width": 163,
+      "height": 304
+    },
+    "assets/cabinet_top.png": {
+      "width": 1092,
+      "height": 163
+    },
+    "assets/sideboard_front.png": {
+      "width": 182,
+      "height": 334
+    },
+    "assets/sideboard_back.png": {
+      "width": 182,
+      "height": 334
+    },
+    "assets/sideboard_right.png": {
+      "width": 627,
+      "height": 334
+    },
+    "assets/sideboard_left.png": {
+      "width": 627,
+      "height": 334
+    },
+    "assets/sideboard_top.png": {
+      "width": 182,
+      "height": 627
+    },
+    "assets/woven_rug.png": {
+      "width": 987,
+      "height": 1151
+    },
+    "assets/window_sill_front.png": {
+      "width": 122,
+      "height": 32
+    },
+    "assets/window_sill_back.png": {
+      "width": 122,
+      "height": 32
+    },
+    "assets/window_sill_right.png": {
+      "width": 1137,
+      "height": 32
+    },
+    "assets/window_sill_left.png": {
+      "width": 1137,
+      "height": 32
+    },
+    "assets/window_sill_top.png": {
+      "width": 122,
+      "height": 1137
+    },
+    "assets/window_head_front.png": {
+      "width": 63,
+      "height": 32
+    },
+    "assets/window_head_back.png": {
+      "width": 63,
+      "height": 32
+    },
+    "assets/window_head_right.png": {
+      "width": 1120,
+      "height": 32
+    },
+    "assets/window_head_left.png": {
+      "width": 1120,
+      "height": 32
+    },
+    "assets/window_head_top.png": {
+      "width": 63,
+      "height": 1120
+    },
+    "assets/window_jamb_a_front.png": {
+      "width": 59,
+      "height": 640
+    },
+    "assets/window_jamb_a_back.png": {
+      "width": 59,
+      "height": 640
+    },
+    "assets/window_jamb_a_right.png": {
+      "width": 32,
+      "height": 640
+    },
+    "assets/window_jamb_a_left.png": {
+      "width": 32,
+      "height": 640
+    },
+    "assets/window_jamb_a_top.png": {
+      "width": 59,
+      "height": 32
+    },
+    "assets/window_jamb_b_front.png": {
+      "width": 59,
+      "height": 640
+    },
+    "assets/window_jamb_b_back.png": {
+      "width": 59,
+      "height": 640
+    },
+    "assets/window_jamb_b_right.png": {
+      "width": 32,
+      "height": 640
+    },
+    "assets/window_jamb_b_left.png": {
+      "width": 32,
+      "height": 640
+    },
+    "assets/window_jamb_b_top.png": {
+      "width": 59,
+      "height": 32
+    },
+    "assets/courtyard_wall.png": {
+      "width": 1008,
+      "height": 448
+    },
+    "assets/courtyard_ground.png": {
+      "width": 420,
+      "height": 1008
+    },
+    "assets/ink-study.png": {
+      "width": 512,
+      "height": 640
+    },
+    "assets/book_print.png": {
+      "width": 350,
+      "height": 482
+    },
+    "assets/book_cover_top.png": {
+      "width": 396,
+      "height": 549
+    },
+    "assets/lamp-pool.png": {
+      "width": 384,
+      "height": 512
+    },
+    "assets/curtain_pleat_0.png": {
+      "width": 32,
+      "height": 555
+    },
+    "assets/curtain_pleat_1.png": {
+      "width": 32,
+      "height": 555
+    },
+    "assets/curtain_pleat_2.png": {
+      "width": 32,
+      "height": 555
+    },
+    "assets/curtain_pleat_3.png": {
+      "width": 32,
+      "height": 555
+    },
+    "assets/curtain_pleat_4.png": {
+      "width": 32,
+      "height": 555
+    },
+    "assets/curtain_pleat_5.png": {
+      "width": 32,
+      "height": 555
+    },
+    "assets/curtain_pleat_6.png": {
+      "width": 32,
+      "height": 555
+    },
+    "assets/curtain_pleat_7.png": {
+      "width": 32,
+      "height": 555
+    },
+    "assets/curtain_pleat_8.png": {
+      "width": 32,
+      "height": 555
+    },
+    "assets/curtain_pleat_9.png": {
+      "width": 32,
+      "height": 555
+    },
+    "assets/curtain_pleat_10.png": {
+      "width": 32,
+      "height": 555
+    },
+    "assets/curtain_pleat_11.png": {
+      "width": 32,
+      "height": 555
+    },
+    "assets/curtain_pleat_12.png": {
+      "width": 32,
+      "height": 555
+    }
+  },
+  "technique": "Generated oak albedo and procedural surfaces; static daylight, occlusion and contact-shadow bake on actual 3D planes; native 3D objects and Script interactions. No live global illumination or photographic backdrop.",
+  "generator": "scripts/generate_afterlight.py"
+}

@@ -1,0 +1,29 @@
+defaults { color: "#D5CEBE"; roughness: .85; }
+material plaster { color: "#D4CBBB"; roughness: 0.95; metalness: 0; }
+material linen { color: "#949780"; roughness: 1; metalness: 0; }
+material baked { color: "#FFFFFF"; roughness: 1; metalness: 0; }
+material oak { color: "#9D7950"; roughness: 0.64; metalness: 0; }
+material window_oak { color: "#B69A72"; roughness: 0.75; metalness: 0; }
+material dark_oak { color: "#534535"; roughness: 0.7; metalness: 0; }
+material skirting { color: "#6C5D49"; roughness: 0.8; metalness: 0; }
+material reveal { color: "#453F35"; roughness: 1; metalness: 0; }
+material rug { color: "#AFA58E"; roughness: 1; metalness: 0; }
+material brass { color: "#AA9167"; roughness: 0.39; metalness: 0.55; }
+material terracotta { color: "#99785D"; roughness: 0.9; metalness: 0; }
+material soil { color: "#3B3B2D"; roughness: 1; metalness: 0; }
+material bark { color: "#81775A"; roughness: 1; metalness: 0; }
+material olive { color: "#788269"; roughness: 0.9; metalness: 0; }
+material outside_joint { color: "#B3B09E"; roughness: 1; metalness: 0; }
+material book_olive { color: "#596459"; roughness: 0.9; metalness: 0; }
+material book_clay { color: "#A17E66"; roughness: 0.9; metalness: 0; }
+material paper { color: "#DED7C3"; roughness: 0.95; metalness: 0; }
+material book_charcoal { color: "#484D46"; roughness: 0.9; metalness: 0; }
+material ceramic { color: "#D4CBB5"; roughness: 0.3; metalness: 0; }
+material ceramic_inside { color: "#9F9A85"; roughness: 0.5; metalness: 0; }
+material tea { color: "#514432"; roughness: 0.18; metalness: 0; }
+material ochre { color: "#AE9255"; roughness: 0.62; metalness: 0; }
+material bulb { color: "#F6DDA9"; roughness: 0.5; metalness: 0; }
+material lamp_inside { color: "#615C4B"; roughness: 1; metalness: 0; }
+material lamp_linen { color: "#C5B599"; roughness: 1; metalness: 0; }
+material lamp_pool { color: "#FFFFFF"; opacity: .999; }
+material sheer { color: "#FFFFFF"; opacity: .84; }

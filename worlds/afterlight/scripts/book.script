@@ -1,0 +1,9 @@
+on onStart(ctx) { store angle = 0; ctx.setState({isOpen: false}); }
+on onUpdate(ctx, deltaSeconds) {
+  let goal = 0;
+  if (ctx.getState().isOpen) { goal = 135; }
+  angle = angle + clamp(goal - angle, -deltaSeconds * 150, deltaSeconds * 150);
+  ctx.setTransform({rotation: [0,0,angle]});
+}
+on onInteract(ctx, event) { ctx.setState({isOpen: !ctx.getState().isOpen}); }
+on onDestroy(ctx) { ctx.log("AFTERLIGHT book released"); }

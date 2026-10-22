@@ -1,0 +1,8 @@
+on onStart(ctx) { store phase = 0; }
+on onUpdate(ctx, deltaSeconds) {
+  phase = (phase + deltaSeconds * .23) % 2;
+  let wave = phase;
+  if (phase > 1) { wave = 2 - phase; }
+  ctx.setTransform({position: [wave * .006,0,0]});
+}
+on onDestroy(ctx) { ctx.log("AFTERLIGHT curtain released"); }

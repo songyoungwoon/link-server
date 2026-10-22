@@ -1,0 +1,1674 @@
+scene {
+  object architecture {
+
+  component envelope {
+
+  element oak_floor {
+    geometry: {"type":"plane","size":[5.4,4.6]};
+    position: [0,0,0];
+    style: "baked";
+    rotation: [-90,0,0];
+    image: "assets/oak_floor.png";
+    classes: ["surface"];
+
+  }
+  element back_plaster {
+    geometry: {"type":"plane","size":[5.4,2.95]};
+    position: [0,1.475,-2.3];
+    style: "baked";
+    rotation: [0,0,0];
+    image: "assets/back_plaster.png";
+    classes: ["surface"];
+
+  }
+  element right_plaster {
+    geometry: {"type":"plane","size":[4.6,2.95]};
+    position: [2.7,1.475,0];
+    style: "baked";
+    rotation: [0,-90,0];
+    image: "assets/right_plaster.png";
+    classes: ["surface"];
+
+  }
+  element front_plaster {
+    geometry: {"type":"plane","size":[5.4,2.95]};
+    position: [0,1.475,2.3];
+    style: "baked";
+    rotation: [0,180,0];
+    image: "assets/front_plaster.png";
+    classes: ["surface"];
+
+  }
+  element ceiling {
+    geometry: {"type":"plane","size":[5.4,4.6]};
+    position: [0,2.95,0];
+    style: "baked";
+    rotation: [90,0,0];
+    image: "assets/ceiling.png";
+    classes: ["surface"];
+
+  }
+  element window_apron {
+    geometry: {"type":"plane","size":[3.05,0.9]};
+    position: [-2.7,0.45,-0.325];
+    style: "baked";
+    rotation: [0,90,0];
+    image: "assets/window_apron.png";
+    classes: ["surface"];
+
+  }
+  element window_header {
+    geometry: {"type":"plane","size":[3.05,0.3]};
+    position: [-2.7,2.8,-0.325];
+    style: "baked";
+    rotation: [0,90,0];
+    image: "assets/window_header.png";
+    classes: ["surface"];
+
+  }
+  element window_left_pier {
+    geometry: {"type":"plane","size":[0.45,2.95]};
+    position: [-2.7,1.475,-2.075];
+    style: "baked";
+    rotation: [0,90,0];
+    image: "assets/window_left_pier.png";
+    classes: ["surface"];
+
+  }
+  element window_right_pier {
+    geometry: {"type":"plane","size":[1.1,2.95]};
+    position: [-2.7,1.475,1.75];
+    style: "baked";
+    rotation: [0,90,0];
+    image: "assets/window_right_pier.png";
+    classes: ["surface"];
+
+  }
+  element back_skirting {
+    geometry: {"type":"box","size":[5.4,0.07,0.018]};
+    position: [0,0.035,-2.285];
+    style: "skirting";
+
+  }
+  element right_skirting {
+    geometry: {"type":"box","size":[0.018,0.07,4.6]};
+    position: [2.685,0.035,0];
+    style: "skirting";
+
+  }
+  element ceiling_reveal {
+    geometry: {"type":"box","size":[5.4,0.012,0.012]};
+    position: [0,2.925,-2.292];
+    style: "reveal";
+
+  }
+  element courtyard_wall {
+    geometry: {"type":"plane","size":[7.2,3.2]};
+    position: [-5.5,1.5,-0.2];
+    style: "baked";
+    rotation: [0,90,0];
+    image: "assets/courtyard_wall.png";
+    classes: ["surface"];
+
+  }
+  element courtyard_ground {
+    geometry: {"type":"plane","size":[3.0,7.2]};
+    position: [-4.1,-0.14,-0.2];
+    style: "baked";
+    rotation: [-90,0,0];
+    image: "assets/courtyard_ground.png";
+    classes: ["surface"];
+
+  }
+  }
+  }
+  object furniture {
+
+  component joinery {
+
+  component bench {
+    position: [-2.29,0.26,-0.35];
+  element bench_front {
+    geometry: {"type":"plane","size":[0.65,0.5]};
+    position: [0,0,1.4];
+    style: "baked";
+    rotation: [0,0,0];
+    image: "assets/bench_front.png";
+    classes: ["surface"];
+
+  }
+  element bench_back {
+    geometry: {"type":"plane","size":[0.65,0.5]};
+    position: [0,0,-1.4];
+    style: "baked";
+    rotation: [0,180,0];
+    image: "assets/bench_back.png";
+    classes: ["surface"];
+
+  }
+  element bench_right {
+    geometry: {"type":"plane","size":[2.8,0.5]};
+    position: [0.325,0,0];
+    style: "baked";
+    rotation: [0,90,0];
+    image: "assets/bench_right.png";
+    classes: ["surface"];
+
+  }
+  element bench_left {
+    geometry: {"type":"plane","size":[2.8,0.5]};
+    position: [-0.325,0,0];
+    style: "baked";
+    rotation: [0,-90,0];
+    image: "assets/bench_left.png";
+    classes: ["surface"];
+
+  }
+  element bench_top {
+    geometry: {"type":"plane","size":[0.65,2.8]};
+    position: [0,0.25,0];
+    style: "baked";
+    rotation: [-90,0,0];
+    image: "assets/bench_top.png";
+    classes: ["surface"];
+
+  }
+  }
+  component cushion {
+    position: [-2.26,0.585,-0.35];
+  element cushion_front {
+    geometry: {"type":"plane","size":[0.6199999999999999,0.09]};
+    position: [0,0,1.35];
+    style: "baked";
+    rotation: [0,0,0];
+    image: "assets/cushion_front.png";
+    classes: ["surface"];
+
+  }
+  element cushion_back {
+    geometry: {"type":"plane","size":[0.6199999999999999,0.09]};
+    position: [0,0,-1.35];
+    style: "baked";
+    rotation: [0,180,0];
+    image: "assets/cushion_back.png";
+    classes: ["surface"];
+
+  }
+  element cushion_right {
+    geometry: {"type":"plane","size":[2.6300000000000003,0.09]};
+    position: [0.345,0,0];
+    style: "baked";
+    rotation: [0,90,0];
+    image: "assets/cushion_right.png";
+    classes: ["surface"];
+
+  }
+  element cushion_left {
+    geometry: {"type":"plane","size":[2.6300000000000003,0.09]};
+    position: [-0.345,0,0];
+    style: "baked";
+    rotation: [0,-90,0];
+    image: "assets/cushion_left.png";
+    classes: ["surface"];
+
+  }
+  element cushion_top {
+    geometry: {"type":"plane","size":[0.6199999999999999,2.6300000000000003]};
+    position: [0,0.08,0];
+    style: "baked";
+    rotation: [-90,0,0];
+    image: "assets/cushion_top.png";
+    classes: ["surface"];
+
+  }
+  element cushion_core {
+    geometry: {"type":"box","size":[0.6199999999999999,0.09,2.6300000000000003]};
+    position: [0,0,0];
+    style: "linen";
+
+  }
+  element cushion_long_neg1_neg1 {
+    geometry: {"type":"cylinder","radius":0.035,"radiusTop":0.035,"height":2.6300000000000003};
+    position: [-0.30999999999999994,-0.045,0];
+    style: "linen";
+    rotation: [90,0,0];
+
+  }
+  element cushion_long_neg1_1 {
+    geometry: {"type":"cylinder","radius":0.035,"radiusTop":0.035,"height":2.6300000000000003};
+    position: [-0.30999999999999994,0.045,0];
+    style: "linen";
+    rotation: [90,0,0];
+
+  }
+  element cushion_long_1_neg1 {
+    geometry: {"type":"cylinder","radius":0.035,"radiusTop":0.035,"height":2.6300000000000003};
+    position: [0.30999999999999994,-0.045,0];
+    style: "linen";
+    rotation: [90,0,0];
+
+  }
+  element cushion_long_1_1 {
+    geometry: {"type":"cylinder","radius":0.035,"radiusTop":0.035,"height":2.6300000000000003};
+    position: [0.30999999999999994,0.045,0];
+    style: "linen";
+    rotation: [90,0,0];
+
+  }
+  element cushion_end_neg1_neg1 {
+    geometry: {"type":"cylinder","radius":0.035,"radiusTop":0.035,"height":0.6199999999999999};
+    position: [0,-0.045,-1.3150000000000002];
+    style: "linen";
+    rotation: [0,0,90];
+
+  }
+  element cushion_corner_neg1_neg1_neg1 {
+    geometry: {"type":"sphere","radius":0.035};
+    position: [-0.30999999999999994,-0.045,-1.3150000000000002];
+    style: "linen";
+
+  }
+  element cushion_corner_1_neg1_neg1 {
+    geometry: {"type":"sphere","radius":0.035};
+    position: [0.30999999999999994,-0.045,-1.3150000000000002];
+    style: "linen";
+
+  }
+  element cushion_end_neg1_1 {
+    geometry: {"type":"cylinder","radius":0.035,"radiusTop":0.035,"height":0.6199999999999999};
+    position: [0,0.045,-1.3150000000000002];
+    style: "linen";
+    rotation: [0,0,90];
+
+  }
+  element cushion_corner_neg1_1_neg1 {
+    geometry: {"type":"sphere","radius":0.035};
+    position: [-0.30999999999999994,0.045,-1.3150000000000002];
+    style: "linen";
+
+  }
+  element cushion_corner_1_1_neg1 {
+    geometry: {"type":"sphere","radius":0.035};
+    position: [0.30999999999999994,0.045,-1.3150000000000002];
+    style: "linen";
+
+  }
+  element cushion_end_1_neg1 {
+    geometry: {"type":"cylinder","radius":0.035,"radiusTop":0.035,"height":0.6199999999999999};
+    position: [0,-0.045,1.3150000000000002];
+    style: "linen";
+    rotation: [0,0,90];
+
+  }
+  element cushion_corner_neg1_neg1_1 {
+    geometry: {"type":"sphere","radius":0.035};
+    position: [-0.30999999999999994,-0.045,1.3150000000000002];
+    style: "linen";
+
+  }
+  element cushion_corner_1_neg1_1 {
+    geometry: {"type":"sphere","radius":0.035};
+    position: [0.30999999999999994,-0.045,1.3150000000000002];
+    style: "linen";
+
+  }
+  element cushion_end_1_1 {
+    geometry: {"type":"cylinder","radius":0.035,"radiusTop":0.035,"height":0.6199999999999999};
+    position: [0,0.045,1.3150000000000002];
+    style: "linen";
+    rotation: [0,0,90];
+
+  }
+  element cushion_corner_neg1_1_1 {
+    geometry: {"type":"sphere","radius":0.035};
+    position: [-0.30999999999999994,0.045,1.3150000000000002];
+    style: "linen";
+
+  }
+  element cushion_corner_1_1_1 {
+    geometry: {"type":"sphere","radius":0.035};
+    position: [0.30999999999999994,0.045,1.3150000000000002];
+    style: "linen";
+
+  }
+  }
+  component table {
+    position: [-1.25,0.685,-0.42];
+  element table_front {
+    geometry: {"type":"plane","size":[0.92,0.045]};
+    position: [0,0,0.51];
+    style: "baked";
+    rotation: [0,0,0];
+    image: "assets/table_front.png";
+    classes: ["surface"];
+
+  }
+  element table_back {
+    geometry: {"type":"plane","size":[0.92,0.045]};
+    position: [0,0,-0.51];
+    style: "baked";
+    rotation: [0,180,0];
+    image: "assets/table_back.png";
+    classes: ["surface"];
+
+  }
+  element table_right {
+    geometry: {"type":"plane","size":[1.02,0.045]};
+    position: [0.46,0,0];
+    style: "baked";
+    rotation: [0,90,0];
+    image: "assets/table_right.png";
+    classes: ["surface"];
+
+  }
+  element table_left {
+    geometry: {"type":"plane","size":[1.02,0.045]};
+    position: [-0.46,0,0];
+    style: "baked";
+    rotation: [0,-90,0];
+    image: "assets/table_left.png";
+    classes: ["surface"];
+
+  }
+  element table_top {
+    geometry: {"type":"plane","size":[0.92,1.02]};
+    position: [0,0.0225,0];
+    style: "baked";
+    rotation: [-90,0,0];
+    image: "assets/table_top.png";
+    classes: ["surface"];
+
+  }
+  }
+  element table_leg_0 {
+    geometry: {"type":"box","size":[0.055,0.67,0.055]};
+    position: [-1.59,0.335,-0.8];
+    style: "oak";
+    rotation: [0,0,3];
+
+  }
+  element table_leg_1 {
+    geometry: {"type":"box","size":[0.055,0.67,0.055]};
+    position: [-1.59,0.335,-0.04];
+    style: "oak";
+    rotation: [0,0,3];
+
+  }
+  element table_leg_2 {
+    geometry: {"type":"box","size":[0.055,0.67,0.055]};
+    position: [-0.91,0.335,-0.8];
+    style: "oak";
+    rotation: [0,0,-3];
+
+  }
+  element table_leg_3 {
+    geometry: {"type":"box","size":[0.055,0.67,0.055]};
+    position: [-0.91,0.335,-0.04];
+    style: "oak";
+    rotation: [0,0,-3];
+
+  }
+  component cabinet {
+    position: [0.75,0.51,-2.02];
+  element cabinet_front {
+    geometry: {"type":"plane","size":[2.8,0.78]};
+    position: [0,0,0.21];
+    style: "baked";
+    rotation: [0,0,0];
+    image: "assets/cabinet_front.png";
+    classes: ["surface"];
+
+  }
+  element cabinet_back {
+    geometry: {"type":"plane","size":[2.8,0.78]};
+    position: [0,0,-0.21];
+    style: "baked";
+    rotation: [0,180,0];
+    image: "assets/cabinet_back.png";
+    classes: ["surface"];
+
+  }
+  element cabinet_right {
+    geometry: {"type":"plane","size":[0.42,0.78]};
+    position: [1.4,0,0];
+    style: "baked";
+    rotation: [0,90,0];
+    image: "assets/cabinet_right.png";
+    classes: ["surface"];
+
+  }
+  element cabinet_left {
+    geometry: {"type":"plane","size":[0.42,0.78]};
+    position: [-1.4,0,0];
+    style: "baked";
+    rotation: [0,-90,0];
+    image: "assets/cabinet_left.png";
+    classes: ["surface"];
+
+  }
+  element cabinet_top {
+    geometry: {"type":"plane","size":[2.8,0.42]};
+    position: [0,0.39,0];
+    style: "baked";
+    rotation: [-90,0,0];
+    image: "assets/cabinet_top.png";
+    classes: ["surface"];
+
+  }
+  }
+  component sideboard {
+    position: [2.34,0.47,-0.1];
+  element sideboard_front {
+    geometry: {"type":"plane","size":[0.48,0.88]};
+    position: [0,0,0.825];
+    style: "baked";
+    rotation: [0,0,0];
+    image: "assets/sideboard_front.png";
+    classes: ["surface"];
+
+  }
+  element sideboard_back {
+    geometry: {"type":"plane","size":[0.48,0.88]};
+    position: [0,0,-0.825];
+    style: "baked";
+    rotation: [0,180,0];
+    image: "assets/sideboard_back.png";
+    classes: ["surface"];
+
+  }
+  element sideboard_right {
+    geometry: {"type":"plane","size":[1.65,0.88]};
+    position: [0.24,0,0];
+    style: "baked";
+    rotation: [0,90,0];
+    image: "assets/sideboard_right.png";
+    classes: ["surface"];
+
+  }
+  element sideboard_left {
+    geometry: {"type":"plane","size":[1.65,0.88]};
+    position: [-0.24,0,0];
+    style: "baked";
+    rotation: [0,-90,0];
+    image: "assets/sideboard_left.png";
+    classes: ["surface"];
+
+  }
+  element sideboard_top {
+    geometry: {"type":"plane","size":[0.48,1.65]};
+    position: [0,0.44,0];
+    style: "baked";
+    rotation: [-90,0,0];
+    image: "assets/sideboard_top.png";
+    classes: ["surface"];
+
+  }
+  }
+  element cabinet_plinth {
+    geometry: {"type":"box","size":[2.66,0.12,0.33]};
+    position: [0.75,0.06,-2.02];
+    style: "dark_oak";
+
+  }
+  element sideboard_plinth {
+    geometry: {"type":"box","size":[0.4,0.03,1.55]};
+    position: [2.36,0.015,-0.1];
+    style: "dark_oak";
+
+  }
+  element cabinet_reveal_0 {
+    geometry: {"type":"box","size":[0.006,0.7,0.004]};
+    position: [-0.17,0.49,-1.801];
+    style: "reveal";
+
+  }
+  element cabinet_pull_0 {
+    geometry: {"type":"box","size":[0.15,0.012,0.025]};
+    position: [0.03,0.68,-1.787];
+    style: "brass";
+
+  }
+  element cabinet_reveal_1 {
+    geometry: {"type":"box","size":[0.006,0.7,0.004]};
+    position: [0.75,0.49,-1.801];
+    style: "reveal";
+
+  }
+  element cabinet_pull_1 {
+    geometry: {"type":"box","size":[0.15,0.012,0.025]};
+    position: [0.95,0.68,-1.787];
+    style: "brass";
+
+  }
+  element cabinet_reveal_2 {
+    geometry: {"type":"box","size":[0.006,0.7,0.004]};
+    position: [1.67,0.49,-1.801];
+    style: "reveal";
+
+  }
+  element cabinet_pull_2 {
+    geometry: {"type":"box","size":[0.15,0.012,0.025]};
+    position: [1.8699999999999999,0.68,-1.787];
+    style: "brass";
+
+  }
+  element sideboard_gap_0 {
+    geometry: {"type":"box","size":[0.005,0.74,0.005]};
+    position: [2.095,0.46,-0.62];
+    style: "reveal";
+
+  }
+  element sideboard_gap_1 {
+    geometry: {"type":"box","size":[0.005,0.74,0.005]};
+    position: [2.095,0.46,0.2];
+    style: "reveal";
+
+  }
+  element woven_rug {
+    geometry: {"type":"plane","size":[2.1,2.45]};
+    position: [0.45,0.007,0.48];
+    style: "baked";
+    rotation: [-90,0,0];
+    image: "assets/woven_rug.png";
+    classes: ["surface"];
+
+  }
+  component window_sill {
+    position: [-2.58,0.895,-0.325];
+  element window_sill_front {
+    geometry: {"type":"plane","size":[0.35,0.055]};
+    position: [0,0,1.625];
+    style: "baked";
+    rotation: [0,0,0];
+    image: "assets/window_sill_front.png";
+    classes: ["surface"];
+
+  }
+  element window_sill_back {
+    geometry: {"type":"plane","size":[0.35,0.055]};
+    position: [0,0,-1.625];
+    style: "baked";
+    rotation: [0,180,0];
+    image: "assets/window_sill_back.png";
+    classes: ["surface"];
+
+  }
+  element window_sill_right {
+    geometry: {"type":"plane","size":[3.25,0.055]};
+    position: [0.175,0,0];
+    style: "baked";
+    rotation: [0,90,0];
+    image: "assets/window_sill_right.png";
+    classes: ["surface"];
+
+  }
+  element window_sill_left {
+    geometry: {"type":"plane","size":[3.25,0.055]};
+    position: [-0.175,0,0];
+    style: "baked";
+    rotation: [0,-90,0];
+    image: "assets/window_sill_left.png";
+    classes: ["surface"];
+
+  }
+  element window_sill_top {
+    geometry: {"type":"plane","size":[0.35,3.25]};
+    position: [0,0.0275,0];
+    style: "baked";
+    rotation: [-90,0,0];
+    image: "assets/window_sill_top.png";
+    classes: ["surface"];
+
+  }
+  }
+  component window_head {
+    position: [-2.63,2.675,-0.325];
+  element window_head_front {
+    geometry: {"type":"plane","size":[0.18,0.055]};
+    position: [0,0,1.6];
+    style: "baked";
+    rotation: [0,0,0];
+    image: "assets/window_head_front.png";
+    classes: ["surface"];
+
+  }
+  element window_head_back {
+    geometry: {"type":"plane","size":[0.18,0.055]};
+    position: [0,0,-1.6];
+    style: "baked";
+    rotation: [0,180,0];
+    image: "assets/window_head_back.png";
+    classes: ["surface"];
+
+  }
+  element window_head_right {
+    geometry: {"type":"plane","size":[3.2,0.055]};
+    position: [0.09,0,0];
+    style: "baked";
+    rotation: [0,90,0];
+    image: "assets/window_head_right.png";
+    classes: ["surface"];
+
+  }
+  element window_head_left {
+    geometry: {"type":"plane","size":[3.2,0.055]};
+    position: [-0.09,0,0];
+    style: "baked";
+    rotation: [0,-90,0];
+    image: "assets/window_head_left.png";
+    classes: ["surface"];
+
+  }
+  element window_head_top {
+    geometry: {"type":"plane","size":[0.18,3.2]};
+    position: [0,0.0275,0];
+    style: "baked";
+    rotation: [-90,0,0];
+    image: "assets/window_head_top.png";
+    classes: ["surface"];
+
+  }
+  }
+  component window_jamb_a {
+    position: [-2.64,1.785,-1.875];
+  element window_jamb_a_front {
+    geometry: {"type":"plane","size":[0.17,1.83]};
+    position: [0,0,0.0275];
+    style: "baked";
+    rotation: [0,0,0];
+    image: "assets/window_jamb_a_front.png";
+    classes: ["surface"];
+
+  }
+  element window_jamb_a_back {
+    geometry: {"type":"plane","size":[0.17,1.83]};
+    position: [0,0,-0.0275];
+    style: "baked";
+    rotation: [0,180,0];
+    image: "assets/window_jamb_a_back.png";
+    classes: ["surface"];
+
+  }
+  element window_jamb_a_right {
+    geometry: {"type":"plane","size":[0.055,1.83]};
+    position: [0.085,0,0];
+    style: "baked";
+    rotation: [0,90,0];
+    image: "assets/window_jamb_a_right.png";
+    classes: ["surface"];
+
+  }
+  element window_jamb_a_left {
+    geometry: {"type":"plane","size":[0.055,1.83]};
+    position: [-0.085,0,0];
+    style: "baked";
+    rotation: [0,-90,0];
+    image: "assets/window_jamb_a_left.png";
+    classes: ["surface"];
+
+  }
+  element window_jamb_a_top {
+    geometry: {"type":"plane","size":[0.17,0.055]};
+    position: [0,0.915,0];
+    style: "baked";
+    rotation: [-90,0,0];
+    image: "assets/window_jamb_a_top.png";
+    classes: ["surface"];
+
+  }
+  }
+  component window_jamb_b {
+    position: [-2.64,1.785,1.225];
+  element window_jamb_b_front {
+    geometry: {"type":"plane","size":[0.17,1.83]};
+    position: [0,0,0.0275];
+    style: "baked";
+    rotation: [0,0,0];
+    image: "assets/window_jamb_b_front.png";
+    classes: ["surface"];
+
+  }
+  element window_jamb_b_back {
+    geometry: {"type":"plane","size":[0.17,1.83]};
+    position: [0,0,-0.0275];
+    style: "baked";
+    rotation: [0,180,0];
+    image: "assets/window_jamb_b_back.png";
+    classes: ["surface"];
+
+  }
+  element window_jamb_b_right {
+    geometry: {"type":"plane","size":[0.055,1.83]};
+    position: [0.085,0,0];
+    style: "baked";
+    rotation: [0,90,0];
+    image: "assets/window_jamb_b_right.png";
+    classes: ["surface"];
+
+  }
+  element window_jamb_b_left {
+    geometry: {"type":"plane","size":[0.055,1.83]};
+    position: [-0.085,0,0];
+    style: "baked";
+    rotation: [0,-90,0];
+    image: "assets/window_jamb_b_left.png";
+    classes: ["surface"];
+
+  }
+  element window_jamb_b_top {
+    geometry: {"type":"plane","size":[0.17,0.055]};
+    position: [0,0.915,0];
+    style: "baked";
+    rotation: [-90,0,0];
+    image: "assets/window_jamb_b_top.png";
+    classes: ["surface"];
+
+  }
+  }
+  }
+  }
+  object still_life {
+
+  component objects {
+
+  element rug_fringe_0 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [-0.55,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_1 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [-0.44500000000000006,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_2 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [-0.3400000000000001,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_3 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [-0.23500000000000004,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_4 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [-0.13000000000000006,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_5 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [-0.025000000000000022,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_6 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [0.07999999999999996,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_7 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [0.18499999999999994,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_8 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [0.2899999999999999,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_9 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [0.3949999999999999,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_10 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [0.5,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_11 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [0.605,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_12 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [0.71,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_13 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [0.815,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_14 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [0.9199999999999999,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_15 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [1.025,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_16 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [1.13,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_17 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [1.2349999999999999,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_18 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [1.3399999999999999,0.009,1.73];
+    style: "rug";
+
+  }
+  element rug_fringe_19 {
+    geometry: {"type":"box","size":[0.008,0.004,0.07]};
+    position: [1.4449999999999998,0.009,1.73];
+    style: "rug";
+
+  }
+  element window_vertical {
+    geometry: {"type":"box","size":[0.12,1.75,0.055]};
+    position: [-2.67,1.775,-0.325];
+    style: "window_oak";
+
+  }
+  element window_cross {
+    geometry: {"type":"box","size":[0.12,0.04,3.05]};
+    position: [-2.67,1.82,-0.325];
+    style: "window_oak";
+
+  }
+  element courtyard_joint_0 {
+    geometry: {"type":"box","size":[0.008,0.008,7.0]};
+    position: [-5.494,0.3,-0.2];
+    style: "outside_joint";
+
+  }
+  element courtyard_joint_1 {
+    geometry: {"type":"box","size":[0.008,0.008,7.0]};
+    position: [-5.494,0.76,-0.2];
+    style: "outside_joint";
+
+  }
+  element courtyard_joint_2 {
+    geometry: {"type":"box","size":[0.008,0.008,7.0]};
+    position: [-5.494,1.22,-0.2];
+    style: "outside_joint";
+
+  }
+  element courtyard_joint_3 {
+    geometry: {"type":"box","size":[0.008,0.008,7.0]};
+    position: [-5.494,1.6800000000000002,-0.2];
+    style: "outside_joint";
+
+  }
+  element courtyard_joint_4 {
+    geometry: {"type":"box","size":[0.008,0.008,7.0]};
+    position: [-5.494,2.14,-0.2];
+    style: "outside_joint";
+
+  }
+  element courtyard_joint_5 {
+    geometry: {"type":"box","size":[0.008,0.008,7.0]};
+    position: [-5.494,2.6,-0.2];
+    style: "outside_joint";
+
+  }
+  element courtyard_pot {
+    geometry: {"type":"cylinder","radius":0.28,"radiusTop":0.39,"height":0.54};
+    position: [-4.42,0.13,0.18];
+    style: "terracotta";
+
+  }
+  element courtyard_soil {
+    geometry: {"type":"cylinder","radius":0.35,"radiusTop":0.35,"height":0.015};
+    position: [-4.42,0.406,0.18];
+    style: "soil";
+
+  }
+  element olive_trunk {
+    geometry: {"type":"cylinder","radius":0.027,"radiusTop":0.015,"height":1.32};
+    position: [-4.42,1.05,0.18];
+    style: "bark";
+    rotation: [0,0,-9];
+
+  }
+  element olive_branch_0 {
+    geometry: {"type":"cylinder","radius":0.009,"radiusTop":0.003,"height":0.72};
+    position: [-4.66,1.28,0.37];
+    style: "bark";
+    rotation: [28,0,39];
+
+  }
+  element olive_leaf_0_0 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-5.0200000000000005,1.5764,0.37];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [0,0,0];
+
+  }
+  element olive_leaf_0_1 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.9,1.5476,0.5063946140238522];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [23,47,0];
+
+  }
+  element olive_leaf_0_2 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.78,1.5188,0.2564796257038108];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [46,94,0];
+
+  }
+  element olive_leaf_0_3 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.66,1.49,0.32808767527016114];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [69,141,0];
+
+  }
+  element olive_leaf_0_4 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.54,1.5188,0.5184037369935073];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [92,188,0];
+
+  }
+  element olive_leaf_0_5 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.42,1.5476,0.28839683336659455];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [115,235,0];
+
+  }
+  element olive_leaf_0_6 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.3,1.5764,0.28951406229993476];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [138,282,0];
+
+  }
+  element olive_branch_1 {
+    geometry: {"type":"cylinder","radius":0.009,"radiusTop":0.003,"height":0.72};
+    position: [-4.5,1.47,-0.010000000000000009];
+    style: "bark";
+    rotation: [36,0,-39];
+
+  }
+  element olive_leaf_1_0 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.86,1.7664,-0.010000000000000009];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [0,0,18];
+
+  }
+  element olive_leaf_1_1 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.74,1.7376,0.12639461402385224];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [23,47,18];
+
+  }
+  element olive_leaf_1_2 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.62,1.7087999999999999,-0.12352037429618923];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [46,94,18];
+
+  }
+  element olive_leaf_1_3 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.5,1.68,-0.051912324729838887];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [69,141,18];
+
+  }
+  element olive_leaf_1_4 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.38,1.7087999999999999,0.13840373699350725];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [92,188,18];
+
+  }
+  element olive_leaf_1_5 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.26,1.7376,-0.09160316663340547];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [115,235,18];
+
+  }
+  element olive_leaf_1_6 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.14,1.7664,-0.09048593770006524];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [138,282,18];
+
+  }
+  element olive_branch_2 {
+    geometry: {"type":"cylinder","radius":0.009,"radiusTop":0.003,"height":0.72};
+    position: [-4.34,1.6600000000000001,0.37];
+    style: "bark";
+    rotation: [44,0,39];
+
+  }
+  element olive_leaf_2_0 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.7,1.9564000000000001,0.37];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [0,0,36];
+
+  }
+  element olive_leaf_2_1 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.58,1.9276000000000002,0.5063946140238522];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [23,47,36];
+
+  }
+  element olive_leaf_2_2 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.46,1.8988,0.2564796257038108];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [46,94,36];
+
+  }
+  element olive_leaf_2_3 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.34,1.87,0.32808767527016114];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [69,141,36];
+
+  }
+  element olive_leaf_2_4 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.22,1.8988,0.5184037369935073];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [92,188,36];
+
+  }
+  element olive_leaf_2_5 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.1,1.9276000000000002,0.28839683336659455];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [115,235,36];
+
+  }
+  element olive_leaf_2_6 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-3.98,1.9564000000000001,0.28951406229993476];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [138,282,36];
+
+  }
+  element olive_branch_3 {
+    geometry: {"type":"cylinder","radius":0.009,"radiusTop":0.003,"height":0.72};
+    position: [-4.18,1.85,-0.010000000000000009];
+    style: "bark";
+    rotation: [52,0,-39];
+
+  }
+  element olive_leaf_3_0 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.54,2.1464,-0.010000000000000009];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [0,0,54];
+
+  }
+  element olive_leaf_3_1 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.42,2.1176,0.12639461402385224];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [23,47,54];
+
+  }
+  element olive_leaf_3_2 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.3,2.0888,-0.12352037429618923];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [46,94,54];
+
+  }
+  element olive_leaf_3_3 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.18,2.06,-0.051912324729838887];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [69,141,54];
+
+  }
+  element olive_leaf_3_4 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-4.06,2.0888,0.13840373699350725];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [92,188,54];
+
+  }
+  element olive_leaf_3_5 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-3.9399999999999995,2.1176,-0.09160316663340547];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [115,235,54];
+
+  }
+  element olive_leaf_3_6 {
+    geometry: {"type":"sphere","radius":1};
+    position: [-3.82,2.1464,-0.09048593770006524];
+    style: "olive";
+    scale: [0.028,0.012,0.11];
+    rotation: [138,282,54];
+
+  }
+  element ink_study {
+    geometry: {"type":"plane","size":[0.83,1.04]};
+    position: [0.6,1.88,-2.284];
+    style: "baked";
+    image: "assets/ink-study.png";
+    classes: ["surface"];
+
+  }
+  element art_frame {
+    geometry: {"type":"frame","size":[0.88,1.09],"border":0.022,"depth":0.025};
+    position: [0.6,1.88,-2.281];
+    style: "oak";
+
+  }
+  element shelf_book_0 {
+    geometry: {"type":"box","size":[0.056636373796570647,0.21511027518016418,0.17]};
+    position: [-0.4316818131017147,1.0075551375900822,-2.015];
+    style: "book_olive";
+    rotation: [0,0,1.4343916796455298];
+
+  }
+  element book_spine_rule_0 {
+    geometry: {"type":"box","size":[0.031150005588113858,0.002,0.002]};
+    position: [-0.4316818131017147,0.935,-1.927];
+    style: "paper";
+
+  }
+  element shelf_book_1 {
+    geometry: {"type":"box","size":[0.05380261707519647,0.18753418783101194,0.17]};
+    position: [-0.3684623176658311,0.993767093915506,-2.015];
+    style: "book_clay";
+    rotation: [0,0,1.9024894065470237];
+
+  }
+  element book_spine_rule_1 {
+    geometry: {"type":"box","size":[0.02959143939135806,0.002,0.002]};
+    position: [-0.3684623176658311,0.935,-1.927];
+    style: "paper";
+
+  }
+  element shelf_book_2 {
+    geometry: {"type":"box","size":[0.05616216897364307,0.2428851444221563,0.17]};
+    position: [-0.3054799246414114,1.0214425722110783,-2.015];
+    style: "paper";
+    rotation: [0,0,-1.4875454692978165];
+
+  }
+  element book_spine_rule_2 {
+    geometry: {"type":"box","size":[0.03088919293550369,0.002,0.002]};
+    position: [-0.3054799246414114,0.935,-1.927];
+    style: "paper";
+
+  }
+  element shelf_book_3 {
+    geometry: {"type":"box","size":[0.04466427970213599,0.2096638419386065,0.17]};
+    position: [-0.24706670030352182,1.0048319209693033,-2.015];
+    style: "book_charcoal";
+    rotation: [0,0,1.7070599553944072];
+
+  }
+  element book_spine_rule_3 {
+    geometry: {"type":"box","size":[0.024565353836174798,0.002,0.002]};
+    position: [-0.24706670030352182,0.935,-1.927];
+    style: "paper";
+
+  }
+  element shelf_book_4 {
+    geometry: {"type":"box","size":[0.0518230094429846,0.24582092906166642,0.17]};
+    position: [-0.19082305573096153,1.0229104645308333,-2.015];
+    style: "book_olive";
+    rotation: [0,0,-0.22634320469067548];
+
+  }
+  element book_spine_rule_4 {
+    geometry: {"type":"box","size":[0.02850265519364153,0.002,0.002]};
+    position: [-0.19082305573096153,0.935,-1.927];
+    style: "paper";
+
+  }
+  element shelf_book_5 {
+    geometry: {"type":"box","size":[0.036407832706036744,0.22436678296126678,0.17]};
+    position: [-0.13870763465645083,1.0121833914806335,-2.015];
+    style: "book_clay";
+    rotation: [0,0,-1.7447309755832987];
+
+  }
+  element book_spine_rule_5 {
+    geometry: {"type":"box","size":[0.020024307988320212,0.002,0.002]};
+    position: [-0.13870763465645083,0.935,-1.927];
+    style: "paper";
+
+  }
+  element shelf_book_6 {
+    geometry: {"type":"box","size":[0.05862235336372554,0.2305331519297652,0.17]};
+    position: [-0.08319254162156971,1.0152665759648827,-2.015];
+    style: "paper";
+    rotation: [0,0,1.0323509603414953];
+
+  }
+  element book_spine_rule_6 {
+    geometry: {"type":"box","size":[0.03224229435004905,0.002,0.002]};
+    position: [-0.08319254162156971,0.935,-1.927];
+    style: "paper";
+
+  }
+  element shelf_book_7 {
+    geometry: {"type":"box","size":[0.041117460820805134,0.2576558419515923,0.17]};
+    position: [-0.025322634529304364,1.0288279209757962,-2.015];
+    style: "book_charcoal";
+    rotation: [0,0,1.5724844852887907];
+
+  }
+  element book_spine_rule_7 {
+    geometry: {"type":"box","size":[0.022614603451442825,0.002,0.002]};
+    position: [-0.025322634529304364,0.935,-1.927];
+    style: "paper";
+
+  }
+  element shelf_book_8 {
+    geometry: {"type":"box","size":[0.05680018939172919,0.19557109662815741,0.17]};
+    position: [0.0316361905769628,0.9977855483140787,-2.015];
+    style: "book_olive";
+    rotation: [0,0,-0.1331159850918633];
+
+  }
+  element book_spine_rule_8 {
+    geometry: {"type":"box","size":[0.031240104165451057,0.002,0.002]};
+    position: [0.0316361905769628,0.935,-1.927];
+    style: "paper";
+
+  }
+  element shelf_book_9 {
+    geometry: {"type":"box","size":[0.029620739334127465,0.19234315936540383,0.17]};
+    position: [0.08284665493989112,0.996171579682702,-2.015];
+    style: "book_clay";
+    rotation: [0,0,0.7321958129698185];
+
+  }
+  element book_spine_rule_9 {
+    geometry: {"type":"box","size":[0.016291406633770107,0.002,0.002]};
+    position: [0.08284665493989112,0.935,-1.927];
+    style: "paper";
+
+  }
+  element shelf_book_10 {
+    geometry: {"type":"box","size":[0.055556199768589234,0.2574007785947368,0.17]};
+    position: [0.13343512449124947,1.0287003892973685,-2.015];
+    style: "paper";
+    rotation: [0,0,-0.6966985674473922];
+
+  }
+  element book_spine_rule_10 {
+    geometry: {"type":"box","size":[0.030555909872724083,0.002,0.002]};
+    position: [0.13343512449124947,0.935,-1.927];
+    style: "paper";
+
+  }
+  element shelf_book_11 {
+    geometry: {"type":"box","size":[0.04170700912329015,0.21756446490206463,0.17]};
+    position: [0.19006672893718918,1.0087822324510323,-2.015];
+    style: "book_charcoal";
+    rotation: [0,0,-1.2421145636628572];
+
+  }
+  element book_spine_rule_11 {
+    geometry: {"type":"box","size":[0.022938855017809585,0.002,0.002]};
+    position: [0.19006672893718918,0.935,-1.927];
+    style: "paper";
+
+  }
+  element shelf_book_12 {
+    geometry: {"type":"box","size":[0.032807095697412456,0.2180563940980747,0.17]};
+    position: [0.23532378134754048,1.0090281970490373,-2.015];
+    style: "book_olive";
+    rotation: [0,0,-1.0923626037964635];
+
+  }
+  element book_spine_rule_12 {
+    geometry: {"type":"box","size":[0.01804390263357685,0.002,0.002]};
+    position: [0.23532378134754048,0.935,-1.927];
+    style: "paper";
+
+  }
+  element cabinet_bowl {
+    geometry: {"type":"cylinder","radius":0.15,"radiusTop":0.2,"height":0.11};
+    position: [1.62,0.955,-2.02];
+    style: "ceramic";
+
+  }
+  element bowl_interior {
+    geometry: {"type":"cylinder","radius":0.18,"radiusTop":0.18,"height":0.007};
+    position: [1.62,1.012,-2.02];
+    style: "ceramic_inside";
+
+  }
+  element bowl_fruit {
+    geometry: {"type":"sphere","radius":0.062};
+    position: [1.6,1.04,-2.01];
+    style: "ochre";
+    scale: [1,0.85,1];
+
+  }
+  element tea_tray {
+    geometry: {"type":"cylinder","radius":0.2,"radiusTop":0.2,"height":0.025};
+    position: [-1.34,0.72,-0.68];
+    style: "dark_oak";
+    scale: [1,1,0.7];
+
+  }
+  element tea_cup {
+    geometry: {"type":"cylinder","radius":0.047,"radiusTop":0.055,"height":0.082};
+    position: [-1.32,0.773,-0.67];
+    style: "ceramic";
+
+  }
+  element tea_surface {
+    geometry: {"type":"cylinder","radius":0.046,"radiusTop":0.046,"height":0.002};
+    position: [-1.32,0.8150000000000001,-0.67];
+    style: "tea";
+
+  }
+  element cup_handle {
+    geometry: {"type":"frame","size":[0.07,0.065],"border":0.012,"depth":0.014};
+    position: [-1.258,0.778,-0.67];
+    style: "ceramic";
+
+  }
+  element teapot {
+    geometry: {"type":"sphere","radius":0.097};
+    position: [-1.47,0.782,-0.3];
+    style: "ceramic";
+    scale: [1,0.77,1];
+
+  }
+  element teapot_lid {
+    geometry: {"type":"cylinder","radius":0.065,"radiusTop":0.065,"height":0.012};
+    position: [-1.47,0.855,-0.3];
+    style: "ceramic";
+
+  }
+  element teapot_knob {
+    geometry: {"type":"sphere","radius":0.016};
+    position: [-1.47,0.873,-0.3];
+    style: "dark_oak";
+
+  }
+  element teapot_spout {
+    geometry: {"type":"cylinder","radius":0.031,"radiusTop":0.015,"height":0.15};
+    position: [-1.37,0.81,-0.3];
+    style: "ceramic";
+    rotation: [0,0,-58];
+
+  }
+  element teapot_handle {
+    geometry: {"type":"frame","size":[0.1,0.12],"border":0.018,"depth":0.015};
+    position: [-1.58,0.8,-0.3];
+    style: "ceramic";
+
+  }
+  element book_pages {
+    geometry: {"type":"box","size":[0.252,0.022,0.35]};
+    position: [-0.92,0.721,-0.16];
+    style: "paper";
+
+  }
+  element book_print {
+    geometry: {"type":"plane","size":[0.25,0.345]};
+    position: [-0.92,0.734,-0.16];
+    style: "baked";
+    rotation: [-90,0,0];
+    image: "assets/book_print.png";
+    classes: ["surface"];
+
+  }
+  element lamp_pool {
+    geometry: {"type":"plane","size":[1.3,1.55]};
+    position: [2.695,1.5,-0.52];
+    style: "lamp_pool";
+    rotation: [0,-90,0];
+    image: "assets/lamp-pool.png";
+    classes: ["surface"];
+    visible: false;
+
+  }
+  component book_hinge {
+    position: [-1.05,0.736,-0.16];
+    state: {"isOpen":false};
+    script: "scripts/book.script";
+  element book_cover_edge {
+    geometry: {"type":"box","size":[0.264,0.007,0.366]};
+    position: [0.13,0,0];
+    style: "book_olive";
+
+  }
+  element book_cover_top {
+    geometry: {"type":"plane","size":[0.264,0.366]};
+    position: [0.13,0.004,0];
+    style: "baked";
+    rotation: [-90,0,0];
+    image: "assets/book_cover_top.png";
+    classes: ["surface"];
+
+  }
+  }
+  component lamp_control {
+    state: {"isOn":false};
+    script: "scripts/lamp.script";
+  element lamp_toggle {
+    geometry: {"type":"cylinder","radius":0.13,"radiusTop":0.13,"height":0.032};
+    position: [2.31,0.926,-0.52];
+    style: "brass";
+
+  }
+  element lamp_stem {
+    geometry: {"type":"cylinder","radius":0.012,"radiusTop":0.012,"height":0.39};
+    position: [2.31,1.132,-0.52];
+    style: "brass";
+
+  }
+  element lamp_shade {
+    geometry: {"type":"cylinder","radius":0.23,"radiusTop":0.14,"height":0.27};
+    position: [2.31,1.43,-0.52];
+    style: "lamp_linen";
+
+  }
+  element lamp_bulb {
+    geometry: {"type":"sphere","radius":0.043};
+    position: [2.31,1.305,-0.52];
+    style: "bulb";
+
+  }
+  element lamp_shade_interior {
+    geometry: {"type":"cylinder","radius":0.203,"radiusTop":0.203,"height":0.002};
+    position: [2.31,1.293,-0.52];
+    style: "lamp_inside";
+
+  }
+  }
+  component curtain_breeze {
+    position: [0,0,0];
+    script: "scripts/breeze.script";
+  element curtain_pleat_0 {
+    geometry: {"type":"plane","size":[0.042,1.85]};
+    position: [-2.43,1.78,0.8];
+    style: "sheer";
+    rotation: [0,90,0];
+    image: "assets/curtain_pleat_0.png";
+    classes: ["surface"];
+
+  }
+  element curtain_pleat_1 {
+    geometry: {"type":"plane","size":[0.042,1.85]};
+    position: [-2.4065826394121603,1.78,0.8310000000000001];
+    style: "sheer";
+    rotation: [0,90,0];
+    image: "assets/curtain_pleat_1.png";
+    classes: ["surface"];
+
+  }
+  element curtain_pleat_2 {
+    geometry: {"type":"plane","size":[0.042,1.85]};
+    position: [-2.419742882874388,1.78,0.8620000000000001];
+    style: "sheer";
+    rotation: [0,90,0];
+    image: "assets/curtain_pleat_2.png";
+    classes: ["surface"];
+
+  }
+  element curtain_pleat_3 {
+    geometry: {"type":"plane","size":[0.042,1.85]};
+    position: [-2.4489246061062286,1.78,0.893];
+    style: "sheer";
+    rotation: [0,90,0];
+    image: "assets/curtain_pleat_3.png";
+    classes: ["surface"];
+
+  }
+  element curtain_pleat_4 {
+    geometry: {"type":"plane","size":[0.042,1.85]};
+    position: [-2.448546347701344,1.78,0.924];
+    style: "sheer";
+    rotation: [0,90,0];
+    image: "assets/curtain_pleat_4.png";
+    classes: ["surface"];
+
+  }
+  element curtain_pleat_5 {
+    geometry: {"type":"plane","size":[0.042,1.85]};
+    position: [-2.4191989422292655,1.78,0.9550000000000001];
+    style: "sheer";
+    rotation: [0,90,0];
+    image: "assets/curtain_pleat_5.png";
+    classes: ["surface"];
+
+  }
+  element curtain_pleat_6 {
+    geometry: {"type":"plane","size":[0.042,1.85]};
+    position: [-2.4067226445397183,1.78,0.986];
+    style: "sheer";
+    rotation: [0,90,0];
+    image: "assets/curtain_pleat_6.png";
+    classes: ["surface"];
+
+  }
+  element curtain_pleat_7 {
+    geometry: {"type":"plane","size":[0.042,1.85]};
+    position: [-2.430605264763448,1.78,1.0170000000000001];
+    style: "sheer";
+    rotation: [0,90,0];
+    image: "assets/curtain_pleat_7.png";
+    classes: ["surface"];
+
+  }
+  element curtain_pleat_8 {
+    geometry: {"type":"plane","size":[0.042,1.85]};
+    position: [-2.453542469521596,1.78,1.048];
+    style: "sheer";
+    rotation: [0,90,0];
+    image: "assets/curtain_pleat_8.png";
+    classes: ["surface"];
+
+  }
+  element curtain_pleat_9 {
+    geometry: {"type":"plane","size":[0.042,1.85]};
+    position: [-2.4397066517483794,1.78,1.0790000000000002];
+    style: "sheer";
+    rotation: [0,90,0];
+    image: "assets/curtain_pleat_9.png";
+    classes: ["surface"];
+
+  }
+  element curtain_pleat_10 {
+    geometry: {"type":"plane","size":[0.042,1.85]};
+    position: [-2.4107091737627613,1.78,1.11];
+    style: "sheer";
+    rotation: [0,90,0];
+    image: "assets/curtain_pleat_10.png";
+    classes: ["surface"];
+
+  }
+  element curtain_pleat_11 {
+    geometry: {"type":"plane","size":[0.042,1.85]};
+    position: [-2.4118437083606103,1.78,1.141];
+    style: "sheer";
+    rotation: [0,90,0];
+    image: "assets/curtain_pleat_11.png";
+    classes: ["surface"];
+
+  }
+  element curtain_pleat_12 {
+    geometry: {"type":"plane","size":[0.042,1.85]};
+    position: [-2.4413381276735633,1.78,1.1720000000000002];
+    style: "sheer";
+    rotation: [0,90,0];
+    image: "assets/curtain_pleat_12.png";
+    classes: ["surface"];
+
+  }
+  }
+  }
+  }
+}

@@ -53,6 +53,12 @@ Script는 각 브라우저의 월드 인스턴스에서 실행됩니다. 다른 
 
 일반 웹 브라우저에서 `http://서버IP:8000/`를 열면 서버 안내 페이지가 나옵니다. 3D 월드는 LINK Browser에서 열어야 합니다. `http://서버IP:8000/.well-known/link`에서 전송 메타데이터를 확인할 수 있습니다.
 
+## AFTERLIGHT · 오후의 방
+
+worlds/afterlight에는 원목 가구와 오후빛을 구성한 작은 3D 방이 포함되어 있습니다. 최신 LINK Browser에서 link://서버IPv4:포트/afterlight를 열고 WASD·마우스 드래그로 둘러보세요. 탁자의 책 표지를 클릭하면 열리고, 스탠드 받침을 클릭하면 작은 빛무리가 켜집니다. 재질의 품질과 사진 보기 제외 동작을 적용하려면 AFTERLIGHT를 지원하는 최신 브라우저 빌드를 사용하세요.
+
+[제작 방식과 조작 안내](https://github.com/songyoungwoon/link/blob/main/docs/afterlight.md)는 브라우저 저장소에 있습니다. 해당 문서는 브라우저 변경을 push한 뒤 GitHub에서 볼 수 있습니다. 빛과 그림자는 정적 베이크이며 실시간 전역 조명이나 멀티플레이어 상태 동기화는 제공하지 않습니다.
+
 ## 내 월드 공개
 
 ```text
