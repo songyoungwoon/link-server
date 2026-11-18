@@ -124,3 +124,8 @@ python -m unittest discover -s tests -v
 ## 라이선스
 
 Copyright 2026 Song Youngwoon. 코드·문서·예제 월드·생성 이미지는 [Apache License 2.0](LICENSE)을 따릅니다. [NOTICE](NOTICE)를 함께 배포하세요. 개인 사진은 포함하지 않습니다.
+## GLB 모델 전송
+
+`models-v1` 세계의 자체 포함 `.glb` 파일을 `model/gltf-binary`로 전송합니다. 파일당 최대 16 MiB, 세션 전체 전송은 기존 64 MiB 예산을 공유합니다. 실제 glTF 프로필 검증과 표시에는 최신 LINK Browser가 필요합니다. 외부 파일을 참조하는 `.gltf` 문서는 제공하지 않습니다.
+
+`lighting-v1`의 Radiance `.hdr` 환경맵도 전송합니다. 파일당 8 MiB이며, 기존 세션 전체 64 MiB 제한을 공유합니다. HDR은 모델 환경광 자원이고 일반 이미지 plane의 표시 형식은 아닙니다.

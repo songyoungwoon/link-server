@@ -35,6 +35,8 @@ BAD_ESCAPE = re.compile(r"%(?![0-9A-Fa-f]{2})")
 ENCODED_SEPARATOR = re.compile(r"%(?:2f|5c)", re.IGNORECASE)
 RESERVED_NAME = re.compile(r"(?:CON|PRN|AUX|NUL|COM[1-9]|LPT[1-9])(?:\..*)?\Z", re.IGNORECASE)
 RESOURCE_TYPES = {
+    ".hdr": (8 * 1024 * 1024, "image/vnd.radiance"),
+    ".glb": (16 * 1024 * 1024, "model/gltf-binary"),
     ".element": (DOCUMENT_LIMIT, "text/plain; charset=utf-8"),
     ".style": (DOCUMENT_LIMIT, "text/plain; charset=utf-8"),
     ".script": (SCRIPT_LIMIT, "text/plain; charset=utf-8"),
